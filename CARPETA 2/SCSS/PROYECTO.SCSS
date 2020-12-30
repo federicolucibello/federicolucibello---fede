@@ -1,0 +1,104 @@
+$fondo: blue;
+
+$text: 18px;
+
+body {
+	background-color: $fondo;
+	p {background-color: red;
+		text-align:center;
+		font-size: $text;
+		text-transform: uppercase;
+		border-style: solid;
+		margin-top: 50px;
+		color: $fondo;
+}
+}
+.parrafo2 {
+	width:300px;
+}
+.encabezado{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+	margin: 0px;
+				.encabezado__menu {
+					margin-top: 25px;
+				}
+						.encabezado__menu li{
+						list-style: none;
+						word-spacing: 5px;
+						letter-spacing: 1px
+						}
+						.encabezado__menu li {
+						float: left;
+						position: relative;
+						}
+						.encabezado__menu li ul {
+						position: absolute;
+						min-width: 140px;
+						display: none;
+						}
+						.encabezado__menu li:hover > ul {
+						display: flex;
+						flex-direction: column;
+						}
+						.encabezado__menu li a{
+			    		text-decoration: none;
+			    		list-style: none;
+			    		margin: 5px 5px 5px 5px;
+			    		color: white;
+			    		font-size:$text;
+			    		font-weight: 400;
+			    		padding: 10px 10px;
+						display: block;
+						}
+						.encabezado__menu li a:hover {
+						background-color: grey;
+						}
+}
+
+.contenedorimagenes {
+    display: flex;
+    flex-direction: row;
+	max-width: 100%;
+	height: 400px;
+    justify-content: space-evenly;
+					.contenedorimagenes img {
+					max-width: 100%;
+					position: absolute;
+					transition: opacity 1s ease-in-out;
+					}
+					.contenedorimagenes__imagen-container {
+					position: relative;
+					top:0;
+					left: 0;
+					width: 100%}
+					.top {
+    				top: 0;
+    				left: 0;
+					}	
+					.bottom:hover {
+					position:relative;
+    				top: 0;
+    				left: 0;
+    				opacity: 0;
+					}
+}
+.footer__listadelfooter {
+	text-align: center;
+	margin-top: 50px;
+	list-style: none;
+	margin-top: 150px;
+			li {
+			text-decoration: none;
+			list-style: none;
+			display: inline;
+			word-spacing: 10px;
+			letter-spacing: 2px
+			}
+			li a{
+			text-decoration: none;
+			list-style: none;
+			color: white;
+			}
+}	
